@@ -3,6 +3,7 @@ package net.luhcarti.blockwar;
 import com.mojang.logging.LogUtils;
 import net.luhcarti.blockwar.entity.EntityInit;
 import net.luhcarti.blockwar.item.ItemInit;
+import net.luhcarti.blockwar.sound.SoundsInit;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraftforge.api.distmarker.Dist;
@@ -33,6 +34,8 @@ public class BlockWar
         ItemInit.register(modEventBus);
 
         EntityInit.register(modEventBus);
+
+        SoundsInit.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
