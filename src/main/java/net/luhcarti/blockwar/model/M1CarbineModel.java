@@ -1,6 +1,7 @@
-package net.luhcarti.blockwar.item.custom;
+package net.luhcarti.blockwar.model;
 
 import net.luhcarti.blockwar.BlockWar;
+import net.luhcarti.blockwar.item.custom.M1Carbine;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
