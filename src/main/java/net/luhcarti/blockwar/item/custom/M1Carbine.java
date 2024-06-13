@@ -10,11 +10,13 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.util.GeckoLibUtil;
 
-public class M1Carbine extends Item implements GeoAnimatable {
+public class M1Carbine extends Item implements GeoItem {
 
     public M1Carbine(Properties pProperties) {
         super(pProperties);
@@ -45,7 +47,7 @@ public class M1Carbine extends Item implements GeoAnimatable {
 
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
-        return null;
+        return GeckoLibUtil.createInstanceCache(this);
     }
 
     @Override
